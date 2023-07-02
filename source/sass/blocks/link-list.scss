@@ -1,0 +1,49 @@
+.link-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    margin-right: 0;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -50px;
+  }
+}
+
+.link-item__link {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+
+  svg {
+    fill: $baseGray;
+  }
+
+  &:hover {
+    background-color: $lightLilac;
+
+    svg {
+      fill: $baseLilac;
+    }
+  }
+
+  &:focus {
+    background-color: $lightLilac;
+
+    svg {
+      fill: $baseLilac;
+    }
+  }
+
+  &:active {
+    background-color: $lightLilac;
+
+    svg {
+      fill: $baseLilac;
+    }
+  }
+}
+

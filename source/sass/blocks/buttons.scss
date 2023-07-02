@@ -1,0 +1,68 @@
+.buttons {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    margin-left: 226px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+  }
+}
+
+.buttons__ok {
+  background-color: $baseLilac;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 8px 20px;
+  color: $baseWhite;
+
+  &:hover {
+    background-color: $altLilac;
+  }
+
+  &:focus {
+    background-color: $altLilac;
+  }
+
+  &:active {
+    background-color: $lilacDark;
+  }
+
+  &:disabled {
+    background-color: $baseGray;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.buttons__reset {
+  border-radius: 4px;
+  padding: 8px 20px;
+  color: $lilacDark;
+  background-color: $baseWhite;
+
+  &:hover {
+    background-color: $altLilac;
+  }
+
+  &:focus {
+    background-color: $altLilac;
+  }
+
+  &:active {
+    background-color: $lilacDark;
+  }
+
+  &:disabled {
+    background-color: $baseGray;
+  }
+}

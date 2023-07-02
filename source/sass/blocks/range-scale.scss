@@ -1,0 +1,81 @@
+.range-scale {
+  width: 241px;
+  height: 4px;
+  background-color: $lightGray;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 160px;
+    height: 4px;
+    background-color: $lilacDark;
+    position: relative;
+    left: 21px;
+    display: block;
+
+    &:disabled{
+      display: none;
+    }
+
+    @media (min-width: $tablet){
+      width: 140px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 223px;
+  }
+}
+
+.range-toggle {
+  width: 24px;
+    height: 24px;
+    content: "";
+    background-color: $baseWhite;
+    border: 2px solid $altLilac;
+    border-radius: 100%;
+    top: -10px;
+    position: absolute;
+    display: block;
+}
+
+.range-toggle--min {
+  left: 0;
+
+  &:hover {
+    background-color: $lightLilac;
+  }
+
+  &:focus {
+    background-color: $lightLilac;
+  }
+
+  &:active {
+    background-color: $baseLilac;
+  }
+
+  &:disabled {
+    background-color: $lightestGray;
+  }
+}
+
+.range-toggle--max {
+  right: 40px;
+
+  &:hover {
+    background-color: $lightLilac;
+  }
+
+  &:focus {
+    background-color: $lightLilac;
+  }
+
+  &:active {
+    background-color: $baseLilac;
+  }
+
+  &:disabled {
+    background-color: $lightestGray;
+  }
+}
+

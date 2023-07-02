@@ -1,0 +1,123 @@
+.features__title {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $lilacDark;
+  margin-top: 50px;
+}
+
+.features__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 4px;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 64px;
+    margin: 4px 20px 60px 20px;
+    text-transform: none;
+  }
+}
+
+.features__list {
+  margin: 0 auto;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.feature-item__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $baseBlack;
+  text-align: center;
+  line-height: 32px;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 36px;
+    width: 267px;
+  }
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 339px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.feature-item__speed-icon {
+  width: 50px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.feature-item__usability-icon {
+  width: 50px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.feature-item__energy-icon {
+  width: 50px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.feature-item__eco-icon {
+  width: 50px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.feature-item__description {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $baseBlack;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 267px;
+  }
+}
+
+.feature-item__texts {
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+}

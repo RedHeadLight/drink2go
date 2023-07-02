@@ -1,0 +1,27 @@
+.media {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.media__list {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.media__title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $lilacDark;
+  text-align: left;
+}
+
+.media-list__item {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 8px 0;
+}

@@ -1,0 +1,47 @@
+.academy-link__title {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.academy-link {
+  margin-left: 57px;
+  margin-top: 41px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    width: 206px;
+    margin: 0 auto;
+  }
+}
+
+.academy-link__button-site {
+  color: $baseGray;
+
+  svg {
+    fill: $baseGray;
+  }
+
+  &:hover {
+    color: $baseLilac;
+
+    svg {
+      fill: $baseLilac;
+    }
+  }
+
+  &:focus {
+    color: $baseLilac;
+
+    svg {
+      fill: $baseLilac;
+    }
+  }
+
+  &:active {
+    color: $lilacDark;
+
+    svg {
+      fill: $lilacDark;
+    }
+  }
+}

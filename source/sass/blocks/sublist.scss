@@ -1,0 +1,123 @@
+.sublist__title {
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 280px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 56px;
+    line-height: 80px;
+    width: 608px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+  }
+}
+
+.sublist__new-marker {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $lilacDark;
+  margin-left: 112px;
+
+  @media (min-width: $tablet) {
+    margin-left: 290px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 180px 631px 4px 30px;
+  }
+}
+
+.sublist__description {
+  width: 280px;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 20px;
+  color: $baseBlack;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 32px;
+    width: 608px;
+  }
+}
+
+.sublist__order-button {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  background-color: $lilacDark;
+  color: $baseWhite;
+  padding: 8px 20px;
+}
+
+.sublist__old-price {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: $lilacDark;
+  width: 40px;
+}
+
+.sublist__new-price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  width: 51px;
+}
+
+.sublist__price-wrapper {
+  display: flex;
+  width: 230px;
+  justify-content: space-between;
+  margin-left: 26px;
+
+  @media (min-width: $tablet) {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+
+.sublist__order-button {
+  width: 113px;
+  border-radius: 4px;
+  margin-left: 10px;
+  background-color: $baseLilac;
+
+  &:hover {
+    background-color: $altLilac;
+  }
+
+  &:focus {
+    background-color: $altLilac;
+  }
+
+  &:active {
+    background-color: $lilacDark;
+  }
+
+  &:disabled {
+    background-color: $baseGray;
+  }
+}
+
+.sublist {
+  @media (min-width: $tablet) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 140px;
+    width: 625px;
+  }
+}

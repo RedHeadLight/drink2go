@@ -1,0 +1,39 @@
+.contacts {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $lilacDark;
+  text-align: left;
+}
+
+.contacts__location {
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet) {
+    width: 204px;
+  }
+}
+
+.contacts__info {
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__wrapper {
+
+  @media (min-width: $tablet) {
+    display: flex;
+    gap: 6px;
+  }
+}

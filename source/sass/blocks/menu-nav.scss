@@ -1,0 +1,15 @@
+.menu-nav {
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu-nav__toggle {
+  width: 60px;
+  height: 60px;
+  padding: 22px;
+  position: absolute;
+}
+

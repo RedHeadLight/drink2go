@@ -1,0 +1,8 @@
+.footer-links {
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    gap: 30px;
+  }
+}

@@ -1,0 +1,18 @@
+.e-shop {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.e-shop__title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $lilacDark;
+  text-align: left;
+}
+
+.e-shop__list {
+  list-style-type: none;
+}

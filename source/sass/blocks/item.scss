@@ -1,0 +1,8 @@
+.item__photo {
+  background-color: $backgroundBeige;
+
+  @media (min-width: $tablet) {
+    width: 476px;
+    margin-left: 146px;
+  }
+}

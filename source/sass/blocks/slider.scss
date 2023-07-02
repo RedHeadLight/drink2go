@@ -1,0 +1,47 @@
+.slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider__tostart-button {
+  position: absolute;
+  top: 105px;
+  height: 100%;
+  z-index: 1;
+  background-color: $backgroundBeige;
+  border: none;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 640px;
+    padding: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 80px;
+    height: 714px;
+    padding: 10px;
+  }
+}
+
+.slider__tonext-button {
+  position: absolute;
+  top: 105px;
+  height: 100%;
+  z-index: 1;
+  background-color: $backgroundBeige;
+  border: none;
+  right: 0;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 640px;
+    padding: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 80px;
+    height: 714px;
+    padding: 10px;
+  }
+}

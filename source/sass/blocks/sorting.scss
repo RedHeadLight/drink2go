@@ -1,0 +1,38 @@
+.sorting {
+  margin: 0 auto;
+
+  @media (min-width: $desktop) {
+    width: 1011px;
+    margin-right: 40px;
+    margin: 0;
+}
+  }
+
+
+.sorting__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $baseBlack;
+  margin-top: 40px;
+}
+
+.sorting__option {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $lilacDark;
+  border: none;
+  margin-top: 27px;
+  padding: 4px 10px;
+}
+
+.sorting__wrapper {
+  display: flex;
+  margin-left: 38px;
+
+  @media (min-width: $tablet) {
+    margin-left: 478px;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,13 @@
+.coffee-list__item {
+ padding: 20px 20px 60px 20px;
+ background-color: $backgroundBeige;
+
+ @media (min-width: $desktop) {
+  display: flex;
+  flex-direction: row;
+}
+}
+
+.coffee-list {
+  margin: 0 auto;
+}

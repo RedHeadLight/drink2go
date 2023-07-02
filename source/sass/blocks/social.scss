@@ -1,0 +1,43 @@
+.social {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.social__map {
+  max-width: calc(100% + 40px);
+  width: calc(100% + 40px);
+  margin: 0 -20px;
+  display: block;
+}
+
+.social__logo {
+  display: flex;
+}
+
+.social__wrapper {
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 318px);
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+
+.social-wrapper__title {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    width: 318px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+
+.social__pic {
+  background-color: $baseWhite;
+}

@@ -1,0 +1,41 @@
+.menu__item {
+  padding: 22px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  color: $baseBlack;
+
+  svg {
+    fill: currentColor;
+    flex-shrink: 0;
+  }
+
+    &:hover {
+      color: $baseLilac;
+    }
+
+    &:focus {
+      color: $baseLilac;
+    }
+
+    &:active {
+      background-color: $lightLilac;
+      color: $baseLilac;
+    }
+
+  @media (min-width: $desktop) {
+    width: 89px;
+  }
+}
+
+.item-title {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    width: 72px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+}
