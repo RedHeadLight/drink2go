@@ -1,126 +1,14 @@
-.checkbox-block {
-  list-style-type: none;
-  font-size: 16px;
-  line-height: 24px;
-  color: $baseBlack;
-  display: flex;
-  flex-wrap: wrap;
+.checkbox-list {
+  margin: 0;
+  padding: 0 3px;
 
   @media (min-width: $tablet) {
-    height: 24px;
+    padding: 0;
   }
-}
-
-.checkbox-list {
-  margin: 0 auto;
 }
 
 .checkbox-list__item {
-  margin-bottom: 20px;
-}
-
-.checkbox-block__label--peru {
-  color: $baseGray;
-}
-
-.checkbox-block__mark {
-  display: block;
-  position: relative;
-  width: 42px;
-  height: 1.6em;
-  margin-bottom: 20px;
-  border-radius: 1em;
-  background: $baseGray;
-  cursor: pointer;
-  user-select: none;
-  transition: background 0.1s ease-in-out;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 19px;
-    height: 19px;
-    border-radius: 10px;
-    background: $baseWhite;
-    position: absolute;
-    left: 2px;
-    top: 3px;
-    transition: all 0.2s ease-in-out;
-}
-  }
-
-.checkbox-block__input:checked + .checkbox-block__label .checkbox-block__mark {
-  background-color: $lilacDark;
-
-  &::before {
-    left: 22px;
-  }
-}
-
-.checkbox-block__mark--last {
-  display: block;
-  position: relative;
-  width: 42px;
-  height: 1.6em;
-  margin-bottom: 20px;
-  border-radius: 1em;
-  background: $lightGray;
-  cursor: pointer;
-  user-select: none;
-  transition: background 0.1s ease-in-out;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 19px;
-    height: 19px;
-    border-radius: 10px;
-    background: $baseWhite;
-    position: absolute;
-    left: 2px;
-    top: 3px;
-    transition: all 0.2s ease-in-out;
-}
-}
-
-.checkbox-list__title {
-
-  @media (min-width: $tablet) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-.checkbox-block__label {
-  display: flex;
-  gap: 10px;
-}
-
-.checkbox-block__label--peru {
-  display: flex;
-  gap: 10px;
-}
-.checkbox-block__input:not(:disabled) + .checkbox-block__label:hover .checkbox-block__mark {
-  box-shadow: inset 0 0 0 2px $altLilac;
-  background-color: $lightLilac;
-}
-
-.checkbox-block__input:disabled + .checkbox-block__label {
-  filter: grayscale(1);
-  .checkbox-block__mark {
-    background-color: $lightGray;
-    &::before {
-      background-color: $baseWhite;
-    }
-  }
-}
-
-.checkbox-block__input:disabled:checked + .checkbox-block__label {
-
-  .checkbox-block__mark {
-
-    &::before {
-      background-color: $baseGray;
-    }
+  & + & {
+    margin-top: 20px;
   }
 }

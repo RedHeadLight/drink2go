@@ -1,31 +1,37 @@
 .menu__item {
-  padding: 22px;
-  width: 60px;
-  height: 60px;
+  padding: 12px 0;
   display: flex;
   color: $baseBlack;
 
   svg {
     fill: currentColor;
     flex-shrink: 0;
+
+    @media (min-width: $desktop) {
+      margin-right: 8px;
+    }
   }
 
-    &:hover {
-      color: $baseLilac;
-    }
+  &:hover {
+    color: $baseLilac;
+  }
 
-    &:focus {
-      color: $baseLilac;
-    }
+  &:focus {
+    color: $baseLilac;
+  }
 
-    &:active {
-      background-color: $lightLilac;
-      color: $baseLilac;
-    }
+  &:active {
+    background-color: $lightLilac;
+    color: $baseLilac;
+  }
 
   @media (min-width: $desktop) {
     width: 89px;
   }
+}
+
+.menu__item--basket {
+  margin-left: 44px;
 }
 
 .item-title {
@@ -33,9 +39,36 @@
 
   @media (min-width: $desktop) {
     display: block;
-    width: 72px;
     font-size: 12px;
     line-height: 16px;
     font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.menu__toggle {
+  padding: 0 2px;
+  background: none;
+  border: none;
+  margin-left: 42px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu__toggle--nojs {
+  display: none;
+}
+
+.menu__toggle--close {
+  .menu__icon--close {
+    display: none;
+  }
+}
+
+.menu__toggle--open {
+  .menu__icon--open {
+    display: none;
   }
 }

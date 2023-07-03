@@ -1,15 +1,26 @@
-.menu-nav {
-  align-items: center;
+.menu__toggle {
+  padding: 0 2px;
+  background: none;
+  border: none;
+  margin-left: 42px;
 
   @media (min-width: $tablet) {
     display: none;
   }
 }
 
-.menu-nav__toggle {
-  width: 60px;
-  height: 60px;
-  padding: 22px;
-  position: absolute;
+.menu__toggle--nojs {
+  display: none;
 }
 
+.menu__toggle--close {
+  .menu__icon--close {
+    display: none;
+  }
+}
+
+.menu__toggle--open {
+  .menu__icon--open {
+    display: none;
+  }
+}

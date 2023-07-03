@@ -1,0 +1,51 @@
+.field {
+  border-radius: 4px;
+  width: 118px;
+  border: 2px solid $altLilac;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  text-align: center;
+  padding: 7px;
+  /* stylelint-disable-next-line */
+  -moz-appearance: textfield;
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    /* stylelint-disable-next-line */
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet) {
+    width: 88px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 134px;
+  }
+
+  &:hover {
+    border: 2px solid $lilacDark;
+  }
+
+  &:focus {
+    border: 2px solid $lilacDark;
+  }
+
+  &:active {
+    border: 2px solid $lilacDark;
+  }
+
+  &:disabled {
+    border: 2px solid $lightGray;
+    color: #bdbdbd;
+  }
+
+  &:disabled::placeholder {
+    color: #bdbdbd;
+  }
+}

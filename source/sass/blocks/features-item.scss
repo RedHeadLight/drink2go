@@ -1,0 +1,99 @@
+.feature-item__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $baseBlack;
+  text-align: center;
+  line-height: 32px;
+  display: table;
+  margin: 9px auto 0;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 36px;
+    width: 267px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+  }
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 339px;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 318px;
+    text-align: center;
+    display: block;
+  }
+
+  & + & {
+    margin-top: 31px;
+
+    @media (min-width: $tablet) {
+      margin-top: 0;
+    }
+  }
+}
+
+.feature-item__speed-icon,
+.feature-item__usability-icon,
+.feature-item__energy-icon,
+.feature-item__eco-icon {
+  width: 50px;
+  height: 56px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    margin: 0 20px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 16px;
+  }
+}
+
+.feature-item__speed-icon {
+  @media (min-width: $tablet) {
+    margin-top: 5px;
+  }
+}
+
+.feature-item__description {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $baseBlack;
+  margin: 6px 0 0;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    width: 267px;
+    margin-top: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    text-align: center;
+    margin-top: 11px;
+  }
+}
+
+.feature-item__texts {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+}

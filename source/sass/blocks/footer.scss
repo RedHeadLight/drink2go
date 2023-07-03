@@ -1,0 +1,14 @@
+.footer {
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  left: calc((100vw - 100%) / -2);
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+}

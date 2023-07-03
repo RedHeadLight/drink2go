@@ -27,7 +27,7 @@
     "stylelint-config-htmlacademy": "1.1.2"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
+    "editorconfig": "editorconfig-cli --exclude 'leaflet.scss' 'leaflet.js'",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
     "w3c": "gulp validateMarkup --silent",
     "bemlinter": "gulp lintBem --silent",

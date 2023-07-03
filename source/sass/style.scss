@@ -5,6 +5,7 @@
 
 
 /* BLOCKS */
+@import "blocks/leaflet.scss";
 @import "blocks/page-header.scss";
 @import "blocks/menu-list.scss";
 @import "blocks/page-body.scss";
@@ -12,27 +13,33 @@
 @import "blocks/menu.scss";
 @import "blocks/sublist.scss";
 @import "blocks/slider.scss";
-@import "blocks/menu-nav.scss";
 @import "blocks/coffee-list.scss";
 @import "blocks/item.scss";
 @import "blocks/main-container.scss";
 @import "blocks/features.scss";
+@import "blocks/features-item.scss";
 @import "blocks/catalog.scss";
 @import "blocks/price-filter.scss";
+@import "blocks/field.scss";
+@import "blocks/field-max.scss";
+@import "blocks/price-field.scss";
 @import "blocks/radio-milk.scss";
 @import "blocks/checkbox-list.scss";
-@import "blocks/buttons.scss";
+@import "blocks/checkbox-block.scss";
 @import "blocks/sorting.scss";
+@import "blocks/sort-block.scss";
 @import "blocks/coffee-card.scss";
 @import "blocks/social.scss";
 @import "blocks/social-logo.scss";
 @import "blocks/link-list.scss";
+@import "blocks/link-item.scss";
 @import "blocks/e-shop.scss";
 @import "blocks/list.scss";
-@import "blocks/media.scss";
 @import "blocks/contacts.scss";
 @import "blocks/academy-link.scss";
 @import "blocks/range-scale.scss";
+@import "blocks/range-toggle.scss";
 @import "blocks/social-icons.scss";
 @import "blocks/footer-links.scss";
-@import "blocks/tocart-pic.scss";
+@import "blocks/footer.scss";
+@import "blocks/disabled.scss";

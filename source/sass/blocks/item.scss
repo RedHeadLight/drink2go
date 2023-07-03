@@ -1,8 +1,13 @@
 .item__photo {
-  background-color: $backgroundBeige;
-
   @media (min-width: $tablet) {
     width: 476px;
-    margin-left: 146px;
+    display: block;
+    margin: 19px auto 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 600px;
+    height: 600px;
+    margin: 0;
   }
 }

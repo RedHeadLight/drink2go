@@ -1,6 +1,123 @@
-.sort-block__choose-bar {
+.sort-block {
+  padding-bottom: 60px;
 
   @media (min-width: $tablet) {
+    padding-bottom: 3px;
+  }
+}
+
+.sort-block__choose-bar {
+  @media (min-width: $tablet) {
     display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 3px;
+  }
+}
+
+.sort-block__choose-block {
+  @media (min-width: $desktop) {
+    margin-top: 8px;
+    padding-left: 3px;
+  }
+}
+
+.sort-block__buttons {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+  margin-bottom: 40px;
+  padding-left: 3px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/-1;
+    margin-top: 7px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    margin-top: 37px;
+  }
+}
+
+.sort-block__ok {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: $baseLilac;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 8px 20px;
+  color: $baseWhite;
+  border: none;
+
+  &:hover {
+    background-color: $altLilac;
+  }
+
+  &:focus {
+    background-color: $altLilac;
+  }
+
+  &:active {
+    background-color: $lilacDark;
+  }
+
+  &:disabled {
+    background-color: $baseGray;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 8px 27px;
+  }
+}
+
+.sort-block__reset {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 8px 20px;
+  color: $lilacDark;
+  background-color: $baseWhite;
+  border: none;
+  margin-top: 12px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    margin-left: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 8px 33px;
+  }
+
+  &:hover {
+    background-color: $altLilac;
+    color: #ffffff;
+  }
+
+  &:focus {
+    background-color: $altLilac;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: $lilacDark;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: $baseGray;
   }
 }

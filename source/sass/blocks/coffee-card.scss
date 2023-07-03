@@ -1,26 +1,46 @@
 .coffee-card {
   display: flex;
   flex-direction: column;
-  background-color: $baseWhite;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 20px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
-    background-color: $lightestGray;
     display: grid;
     grid-template-columns: repeat(2, 349px);
-    gap: 20px;
+    width: 728px;
+    padding: 0;
+    gap: 30px;
+    margin-top: 30px;
   }
 
 
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: repeat(3, 317px);
-    gap: 20px;
+    gap: 30px;
+    width: 100%;
+  }
+}
+
+.coffee-card__decaf-flat-white {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 40px 20px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 50px 30px 30px;
+  }
+
+  & + & {
+    margin-top: 22px;
+
+    @media (min-width: $tablet) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -28,8 +48,7 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
-  align-items: center;
-  text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 24px;
@@ -40,39 +59,53 @@
 .coffee-card__description {
   font-size: 14px;
   line-height: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  align-items: center;
-  text-align: center;
+  margin: 5px 0 0;
+
+  @media (min-width: $tablet) {
+    margin-top: 9px;
+  }
 }
 
 .coffee-card__pic {
-  margin: 0 auto;
+  display: block;
+  margin: 0 auto 22px;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto 30px;
+    width: 130px;
+    height: 188px;
+  }
+}
+
+.coffee-card__wrapper {
+  margin: 15px 0 0;
+  display: flex;
   align-items: center;
-  background-color: $baseWhite;
-  margin-left: 75px;
-  margin-top: 40px;
+
+  @media (min-width: $tablet) {
+    margin-top: 20px;
+    justify-content: space-between;
+  }
 }
 
 .coffee-card__price {
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
-  margin-left: 40px;
 }
 
 .coffee-card__add-to-cart {
   width: 141px;
-  height: 36px;
+  margin-left: 50px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $lilacDark;
   color: $baseWhite;
   font-size: 14px;
   line-height: 20px;
   border-radius: 4px;
-  padding-left: 45px;
   background-color: $baseLilac;
+  padding: 8px 20px;
 
   &:hover {
     background-color: $altLilac;
@@ -89,4 +122,9 @@
   &:disabled {
     background-color: $baseGray;
   }
+}
+
+.coffee-card__add-to-cart-icon {
+  margin-right: 6px;
+  flex-shrink: 0;
 }

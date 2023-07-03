@@ -1,4 +1,3 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -21,16 +20,14 @@ img {
   height: auto;
 }
 
-a {
-  text-decoration: none;
-}
-
 input,
 button,
 textarea {
   font-family: inherit;
 }
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }

@@ -1,47 +1,102 @@
 .slider {
   width: 100%;
   margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $desktop) {
+    padding-bottom: 50px;
+  }
 }
 
-.slider__tostart-button {
+.slider::before {
+  content: "";
   position: absolute;
-  top: 105px;
+  left: calc((100vw - 100%) / -2);
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: $backgroundBeige;
+  z-index: -1;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 0;
   height: 100%;
   z-index: 1;
-  background-color: $backgroundBeige;
+  background-color: transparent;
   border: none;
 
   @media (min-width: $tablet) {
     width: 80px;
-    height: 640px;
     padding: 10px;
+    height: calc(100% - 188px);
   }
 
   @media (min-width: $desktop) {
-    width: 80px;
-    height: 714px;
-    padding: 10px;
+    height: 100%;
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &--next:hover {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0) 0%, rgba(120, 89, 207, 0.25) 100%);
   }
 }
 
-.slider__tonext-button {
-  position: absolute;
-  top: 105px;
-  height: 100%;
-  z-index: 1;
-  background-color: $backgroundBeige;
-  border: none;
+.slider__list {
+  position: relative;
+}
+
+.slider__btn--prev {
+  left: 0;
+}
+
+.slider__btn--next {
   right: 0;
+}
 
+.slider::after {
   @media (min-width: $tablet) {
-    width: 80px;
-    height: 640px;
-    padding: 10px;
+    content: "";
+    position: absolute;
+    left: calc((100vw - 100%) / -2);
+    bottom: 0;
+    width: 100vw;
+    height: 188px;
+    background-color: #ffffff;
+    z-index: -1;
   }
 
   @media (min-width: $desktop) {
-    width: 80px;
-    height: 714px;
-    padding: 10px;
+    display: none;
+  }
+}
+
+.slider__paginations {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: absolute;
+    left: 50%;
+    bottom: 69px;
+    transform: translateX(-50%);
+  }
+}
+
+.slider__pagination {
+  background-color: #ffffff;
+  width: 62px;
+  border: none;
+  padding: 0;
+  height: 4px;
+
+  &--active {
+    background-color: $baseLilac;
   }
 }

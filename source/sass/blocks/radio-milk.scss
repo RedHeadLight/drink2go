@@ -1,20 +1,29 @@
 .radio-milk {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 3px;
   border: none;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .radio-milk__title {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  margin: 23px 0 22px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
 }
 
 .radio-milk__list {
   list-style-type: none;
   margin: 0 auto;
-  margin-left: -24px;
+  padding: 0;
 }
 
 .radio-milk__label {
@@ -28,33 +37,31 @@
 .radio-milk__input:checked + .radio-milk__label .radio-milk__mark-radio {
   width: 24px;
   height: 24px;
-  background-color: white;
   appearance: none;
   border: 2px solid $lilacDark;
   border-radius: 100%;
   background-color: $lilacDark;
-  box-shadow: inset 0 0 0 2px white;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .radio-milk__label .radio-milk__mark-radio {
   &:focus {
-  background-color: white;
-  appearance: none;
-  border: 2px solid $altLilac;
-  border-radius: 100%;
-  background-color: $baseLilac;
-  box-shadow: inset 0 0 0 2px white;
+    appearance: none;
+    border: 2px solid $altLilac;
+    border-radius: 100%;
+    background-color: $baseLilac;
+    box-shadow: inset 0 0 0 2px #ffffff;
   }
 }
 
 .radio-milk__mark-radio {
   width: 24px;
   height: 24px;
-  background-color: white;
+  background-color: #ffffff;
   appearance: none;
   border: 2px solid $baseGray;
   border-radius: 100%;
-  box-shadow: inset 0 0 0 2px white;
+  box-shadow: inset 0 0 0 2px #ffffff;
   display: block;
 }
 
@@ -62,19 +69,23 @@
   margin-bottom: 20px;
 }
 
-.radio-milk__input:not(:disabled) + .radio-milk__label:hover .radio-milk__mark-radio {
+.radio-milk__input:not(:disabled) + .radio-milk__label:hover .radio-milk__mark-radio,
+.radio-milk__input:focus + .radio-milk__label .radio-milk__mark-radio {
   border: 2px solid $altLilac;
   background-color: $altLilac;
 }
 
-.radio-milk__input {
-  &:disabled {
-    & + .radio-milk__label {
-      filter:grayscale(1);
-      color: $baseGray;
-      .radio-milk__mark-radio {
-        border-color: $lightGray;
-      }
+.radio-milk__input:focus + .radio-milk__label {
+  outline: 1px solid $altLilac;
+}
+
+.radio-milk__input:disabled {
+  & + .radio-milk__label {
+    filter: grayscale(1);
+    color: $baseGray;
+
+    .radio-milk__mark-radio {
+      border-color: $lightGray;
     }
   }
 }

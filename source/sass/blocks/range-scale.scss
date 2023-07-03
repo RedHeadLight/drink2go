@@ -1,81 +1,38 @@
 .range-scale {
-  width: 241px;
+  width: 100%;
   height: 4px;
   background-color: $lightGray;
   position: relative;
+  margin: 10px 0;
+  padding: 0 3px;
 
   &::after {
     content: "";
-    width: 160px;
+    width: 225px;
     height: 4px;
     background-color: $lilacDark;
     position: relative;
     left: 21px;
     display: block;
 
-    &:disabled{
+    &:disabled {
       display: none;
     }
 
-    @media (min-width: $tablet){
-      width: 140px;
+    @media (min-width: $tablet) {
+      width: 170px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 260px;
     }
   }
 
   @media (min-width: $tablet) {
     width: 223px;
   }
-}
 
-.range-toggle {
-  width: 24px;
-    height: 24px;
-    content: "";
-    background-color: $baseWhite;
-    border: 2px solid $altLilac;
-    border-radius: 100%;
-    top: -10px;
-    position: absolute;
-    display: block;
-}
-
-.range-toggle--min {
-  left: 0;
-
-  &:hover {
-    background-color: $lightLilac;
-  }
-
-  &:focus {
-    background-color: $lightLilac;
-  }
-
-  &:active {
-    background-color: $baseLilac;
-  }
-
-  &:disabled {
-    background-color: $lightestGray;
+  @media (min-width: $desktop) {
+    width: 313px;
   }
 }
-
-.range-toggle--max {
-  right: 40px;
-
-  &:hover {
-    background-color: $lightLilac;
-  }
-
-  &:focus {
-    background-color: $lightLilac;
-  }
-
-  &:active {
-    background-color: $baseLilac;
-  }
-
-  &:disabled {
-    background-color: $lightestGray;
-  }
-}
-

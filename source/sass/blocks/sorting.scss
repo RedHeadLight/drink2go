@@ -2,11 +2,9 @@
   margin: 0 auto;
 
   @media (min-width: $desktop) {
-    width: 1011px;
-    margin-right: 40px;
     margin: 0;
-}
   }
+}
 
 
 .sorting__title {
@@ -14,25 +12,39 @@
   line-height: 24px;
   font-weight: 600;
   color: $baseBlack;
-  margin-top: 40px;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    margin-right: 15px;
+  }
 }
 
 .sorting__option {
+  width: 165px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
+  letter-spacing: 0.7px;
   color: $lilacDark;
   border: none;
-  margin-top: 27px;
-  padding: 4px 10px;
+  margin: 0;
+  padding: 0 17px;
+  background: url("../img/select.svg") right 4px center no-repeat transparent;
+  appearance: none;
+
+  @media (min-width: $tablet) {
+    background-position: right 9px center;
+    padding: 0 11px;
+  }
 }
 
 .sorting__wrapper {
   display: flex;
-  margin-left: 38px;
+  justify-content: space-between;
+  padding: 2px 3px 0;
 
   @media (min-width: $tablet) {
-    margin-left: 478px;
+    margin-left: auto;
     justify-content: flex-end;
   }
 }

@@ -1,0 +1,45 @@
+.range-toggle {
+  width: 24px;
+  height: 24px;
+  content: "";
+  background-color: $baseWhite;
+  border: 2px solid $altLilac;
+  border-radius: 100%;
+  top: -10px;
+  position: absolute;
+  display: block;
+  z-index: 1;
+
+  &:hover {
+    background-color: $lightLilac;
+  }
+
+  &:focus {
+    background-color: $lightLilac;
+  }
+
+  &:active {
+    background-color: $baseLilac;
+  }
+
+  &:disabled {
+    border: 2px solid #bdbdbd;
+    background: #f8f8f8;
+  }
+}
+
+.range-toggle--min {
+  left: 0;
+}
+
+.range-toggle--max {
+  left: 236px;
+
+  @media (min-width: $tablet) {
+    left: 179px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 275px;
+  }
+}
